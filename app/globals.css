@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  .dark .toolbarModal,
+  .toolbar {
+    box-shadow: 0 0 0 1px hsla(0, 0%, 100%, 0.06);
+  }
+
+  .dark .toolbarModal,
+  .light .toolbar,
+  .toolbar {
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+  }
+
+  .light .toolbar {
+    box-shadow:
+      var(--ds-shadow-border),
+      0 1px 1px rgba(0, 0, 0, 0.02),
+      0 4px 8px rgba(0, 0, 0, 0.04);
+  }
+
+  .light .toolbarModal {
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+  }
+}
+
+@layer {
+  :root {
+    --p-color-bg-fill: #fff;
+    --color-light-1000: #111110;
+    --color-light-900: #646466;
+    --color-light-800: #6f6f6f;
+    --color-light-500: rgba(0, 0, 0, 0.03);
+    --color-light-400: rgba(0, 0, 0, 0.02);
+    --color-light-200: #fafafa;
+    --color-light-100: #fcfcfc;
+    --color-light-accent: color(display-p3 1 0.144 0.4521);
+    --color-light-border: #ededed;
+    --color-light-border-transparent: color(display-p3 0 0 0/0.08);
+    --color-superlight-bg: hsla(0, 0%, 9%, 0.03);
+    --color-light-toolbar: hsla(0, 0%, 9%, 0.5);
+    --color-light-toolbar-light: hsla(0, 0%, 99%, 0.5);
+    --ds-shadow-border: 0 0 0 1px rgba(0, 0, 0, 0.08);
+    --ds-shadow-small: 0px 2px 2px rgba(0, 0, 0, 0.04);
+    --ds-shadow-border-small: var(--ds-shadow-border), var(--ds-shadow-small);
+    --ds-shadow-medium: 0px 2px 2px rgba(0, 0, 0, 0.04), 0px 8px 8px -8px rgba(0, 0, 0, 0.04);
+    --ds-shadow-border-medium: var(--ds-shadow-border), var(--ds-shadow-medium);
+    --ds-shadow-large: 0px 2px 2px rgba(0, 0, 0, 0.04), 0px 8px 16px -4px rgba(0, 0, 0, 0.04);
+    --ds-shadow-border-large: var(--ds-shadow-border), var(--ds-shadow-large);
+    --ds-shadow-tooltip: var(--ds-shadow-border), 0px 1px 1px rgba(0, 0, 0, 0.02), 0px 4px 8px rgba(0, 0, 0, 0.04);
+    --ds-shadow-menu: var(--ds-shadow-border), 0px 1px 1px rgba(0, 0, 0, 0.02), 0px 4px 8px -4px rgba(0, 0, 0, 0.04),
+      0px 16px 24px -8px rgba(0, 0, 0, 0.06);
+    --ds-shadow-modal: var(--ds-shadow-border), 0px 1px 1px rgba(0, 0, 0, 0.02), 0px 8px 16px -4px rgba(0, 0, 0, 0.04),
+      0px 24px 32px -8px rgba(0, 0, 0, 0.06);
+    --ds-shadow-fullscreen: var(--ds-shadow-border), 0px 1px 1px rgba(0, 0, 0, 0.02),
+      0px 8px 16px -4px rgba(0, 0, 0, 0.04), 0px 24px 32px -8px rgba(0, 0, 0, 0.06);
+    --ds-focus-color: #0070f3;
+    --ds-focus-ring: 0 0 0 2px var(--color-gray-100), 0 0 0 4px var(--ds-focus-color);
+    --ds-focus-ring-button: 0 0 0 1px rgba(0, 0, 0, 0.08), 0 0 0 2px var(--color-gray-100),
+      0 0 0 4px var(--ds-focus-color);
+    --color-dark-1000: #ededed;
+    --color-dark-900: #bfbfbf;
+    --color-dark-800: #b0b0b0;
+    --color-dark-500: hsla(0, 0%, 100%, 0.03);
+    --color-dark-400: hsla(0, 0%, 100%, 0.04);
+    --color-dark-200: #0f0f0f;
+    --color-dark-100: #121212;
+    --color-dark-accent: color(display-p3 0.3499 1 0.766/0.9);
+    --color-dark-border: hsla(0, 0%, 100%, 0.03);
+    --color-dark-border-transparent: hsla(0, 0%, 100%, 0.07);
+    --color-dark-border-supertransparent: hsla(0, 0%, 100%, 0.03);
+    --color-dark-superlight-bg: hsla(0, 0%, 100%, 0.04);
+    --color-dark-toolbar: rgba(31, 31, 31, 0.5);
+    --color-dark-toolbar-dark: rgba(31, 31, 31, 0.5);
+    --color-bg-superlight: hsla(0, 0%, 100%, 0.02);
+    --color-bg-superlight-hover: hsla(0, 0%, 100%, 0.05);
+  }
+}

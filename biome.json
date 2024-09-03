@@ -1,0 +1,28 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.7.3/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+  "linter": {
+    "ignore": [".wrangler", "node_modules"],
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "a11y": {
+        "noSvgWithoutTitle": "off"
+      },
+      "style": {
+        "noNonNullAssertion": "off"
+      },
+      "correctness": {
+        "useExhaustiveDependencies": "off"
+      },
+			"nursery": {
+				"useSortedClasses": "warn"
+			}
+    }
+  },
+  "formatter": {
+    "indentStyle": "space"
+  }
+}
