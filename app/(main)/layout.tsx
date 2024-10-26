@@ -30,7 +30,6 @@ export default function RootLayout({
         )}
       >
         {children}
-        <Toolbar />
       </body>
     </html>
   );
