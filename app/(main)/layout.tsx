@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "../globals.css";
 import Toolbar from "@/components/toolbar";
-import { cn } from "./utils";
+import { cn } from "../utils";
 
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
